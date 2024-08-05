@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main-div">
+      <div class="search-div">
+        <input
+          type="search"
+          class="search-inp"
+          spellcheck="false"
+          placeholder="Enter City Name"
+        />
+        <button class="search-btn" onclick="fetchData()">
+          <img src="images/search.png" />
+        </button>
+      </div>
+      <div class="weather-details">
+        <div class="weather-img">
+          <img src="images/clouds.png" id="weather" />
+        </div>
+        <h1 class="temprature">22°C</h1>
+        <h1 class="city-name">Indore</h1>
+        <div class="last-section">
+          <div class="col-humidity">
+            <img src="images/humidity.png" />
+            <div class="humi-text">
+              <p class="humidity">50%</p>
+              <p>humidity</p>
+            </div>
+          </div>
+          <div class="col-wind">
+            <img src="images/wind.png" />
+            <div class="wind-text">
+              <p class="wind">15 km/h</p>
+              <p>Wind Speed</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
